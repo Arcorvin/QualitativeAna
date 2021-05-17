@@ -1,8 +1,11 @@
-var promp1 = prompt("Hey what is your name");
-var promp2 = prompt("Hey what is your favorite color");
+var prompt1 = prompt("Enter the amount of your bill");
 
-var who = "My name is " + promp1 + " and my favorite color is " + promp2;
+var tax1 = Number(prompt1) * .07;
 
+var tax2 = (Number(tax1)+ Number(prompt1)) * .05;
 
-document.querySelector(".name").innerHTML = who;
-document.querySelector(".color").innerHTML = col;
+var total = Number(tax2)+ Number(tax1) + Number(prompt1);
+
+var prib = "Your total bill is $" + total;
+
+document.querySelector(".bill").innerHTML = prib;
